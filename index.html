@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<title>Prueba GradiWeb </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Style CSS -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="./css/style.css">
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200;400;500;700&display=swap"
+    rel="stylesheet">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<body class="w3-light-grey">
+
+    <p style="width:100%; text-align:right;"> <img
+            src="https://www.gradiweb.com/wp-content/themes/gradiwebtemplate/img/logo-small.png" alt="" width="24"
+            height="auto" style="margin: 2rem 0rem;">
+    </p>
+    <!-- float/menu -->
+    <nav class="w3-animate-left purpleCl">
+        <div class="w3-bar-block">
+            <a href="#" class="w3-bar-item w3-button w3-padding purpleOs">
+                <img src="./img/sun.svg" alt="cloudy" width="34" height="auto"> <br>
+                Cloudy
+            </a>
+            <a id="actualBogota" href="#" class="w3-bar-item w3-button w3-padding tempe">
+
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main">
+
+        <!-- Header -->
+        <header class="w3-container">
+            <div class="leftHeader">
+                <i class="fas fa-map-marker-alt"></i>
+                <p> Bogotá</p>
+                <img src="./img/mapa.png" alt="mapa" width="auto" height="70">
+            </div>
+        </header>
+
+        <div class="w3-margin-bottom w3-margin-top">
+            <div class="w3-quarter">
+                <p><strong>3 Days</strong> Forecast</p>
+                <div class="w3-container time">
+                    <div class="w3-left time_first sabado">
+                    </div>
+                    <div class="w3-left time_two">
+                        Saturday<br>
+                        <span id="sabadoMain"></span>
+                    </div>
+                    <div class="w3-right time_three">
+                        <p id="sabado"></p>
+                    </div>
+                </div>
+
+                <div class="w3-container time two">
+                    <div class="w3-left time_first domingo">
+                        
+                    </div>
+                    <div class="w3-left time_two">
+                        Sunday<br>
+                        <span id="domingoMain"></span>
+                    </div>
+                    <div class="w3-right time_three">
+                        <p id="domingo"></p>
+                    </div>
+                </div>
+
+                <div class="w3-container time three">
+                    <div class="w3-left time_first lunes">
+                        
+                    </div>
+                    <div class="w3-left time_two">
+                        Monday<br>
+                        <span id="lunesMain"></span>
+                    </div>
+                    <div class="w3-right time_three">
+                        <p id="lunes"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-quarter">
+                <p><strong>Place to</strong> Visit</p>
+                <div class="w3-container w3-padding-16 two_column">
+                    <div class="w3-left">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p> Arab Street Singapure</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-quarter">
+                <div class="w3-container header_three_column">
+                    <div class="w3-left">
+                        <p><strong>+</strong> Top Reviews</p>
+
+                    </div>
+                    <div class="w3-right">
+                        <ul class="friends-harmonic">
+                            <li>
+                                <a href="#">
+                                    <img src="img/friend-harmonic9.jpg" alt="friend">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/friend-harmonic10.jpg" alt="friend">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/friend-harmonic7.jpg" alt="friend">
+                                </a>
+                            </li>
+                            <li class="purpleColor">
+                                <a href="#">
+                                    9+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w3-container three_column">
+                    <div class="one_section">
+                        <div class="w3-left">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Art Science Mussum</p>
+                        </div>
+                    </div>
+                    <div class="two_section">
+                        <div class="w3-left">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p> Art Science Mussum</p>
+                        </div>
+                        <div class="right">
+                            <p>+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-quarter cuarta">
+                <div class="w3-container column_four">
+                    <div class="section_one">
+                        <div class="w3-left one">
+                            <img src="./img/sunMo.svg" alt="cloudy" width="34" height="auto">
+                        </div>
+                        <div class="right_four">
+                            <h5 id="lyonWeather" class="fontStrong"></h5>
+                            <h5> <b>Lyon</b> <br> Francia</h5>
+                        </div>
+                        <div class="four_inter">
+                            <p id="humidityLyon"></p>
+                            <p>Northwest</p>
+                            <p id="windLyon"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="w3-container column_four">
+                    <div class="section_one">
+                        <div class="w3-left one">
+                            <img src="./img/luna.svg" alt="cloudy" width="34" height="auto">
+                        </div>
+                        <div class="right_four">
+                            <h5 id="parisWeather" class="fontStrong"></h5>
+                            <h5> <b>Paris</b> <br> Francia</h5>
+                        </div>
+                        <div class="four_inter">
+                            <p id="humidityParis"></p>
+                            <p>West</p>
+                            <p id="windParis"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="w3-container column_four different">
+                    <div class="section_one">
+                        <div class="location">
+                            <p><a href="#" class="btnLocation"> Add Locations </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- End page content -->
+    </div>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+<script src="./js/forecast.js"></script>
+
+<script src="./js/weather.js"></script>
+
+</html>
